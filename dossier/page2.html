@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dossier Civil - Page 2</title>
 
 <style>
@@ -14,164 +15,225 @@
 
 body{
     background:#2c2c2c;
-    font-family:"Courier New", monospace;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    font-family:"Times New Roman", serif;
 }
 
 .book{
-    display:flex;
-    gap:15px;
-}
+    width:1450px;
+    height:1000px;
+    position:relative;
 
-.page{
-    width:500px;
-    height:820px;
-    background:#efe4be;
-    padding:40px;
-    box-shadow:0 0 25px rgba(0,0,0,.5);
-    overflow:auto;
+    background:url("../images/pages-ouvertes.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 .left-page{
-    border-right:4px solid #ccb98d;
+    position:absolute;
+    left:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-right:20px;
 }
 
 .right-page{
-    border-left:4px solid #ccb98d;
+    position:absolute;
+    right:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-left:20px;
 }
 
 h1{
-    border-bottom:2px solid #000;
+    color:#4a3218;
+    border-bottom:2px solid #6f532d;
     padding-bottom:10px;
     margin-bottom:20px;
+    font-size:34px;
 }
 
 h2{
-    margin-top:25px;
-    margin-bottom:15px;
-}
-
-ul{
-    margin-left:25px;
-    line-height:30px;
+    color:#5d3f1e;
+    margin-top:15px;
+    margin-bottom:8px;
 }
 
 p{
-    line-height:28px;
+    color:#2b1f12;
+    line-height:1.7;
+    font-size:20px;
+    margin-bottom:10px;
 }
 
-.note{
-    margin-top:25px;
-    background:#fff5bf;
-    padding:15px;
-    border-left:5px solid orange;
+li{
+    color:#2b1f12;
+    line-height:1.7;
+    margin-left:25px;
+    font-size:20px;
 }
 
 .arrow{
     position:fixed;
     top:50%;
     transform:translateY(-50%);
-    text-decoration:none;
     color:white;
-    font-size:80px;
+    text-decoration:none;
+    font-size:100px;
     transition:.2s;
 }
 
 .arrow:hover{
-    transform:translateY(-50%) scale(1.15);
+    transform:translateY(-50%) scale(1.1);
 }
 
 .left{
-    left:30px;
+    left:25px;
 }
 
 .right{
-    right:30px;
+    right:25px;
+}
+
+.note{
+    margin-top:15px;
+    background:rgba(255,240,180,.35);
+    border-left:4px solid #9b6f1e;
+    padding:12px;
+}
+
+.page-number{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#6d5330;
 }
 
 </style>
 </head>
-
 <body>
 
 <a href="page1.html" class="arrow left">❮</a>
 
 <div class="book">
 
-    <div class="page left-page">
+    <div class="left-page">
 
-        <h1>PERSONNALITÉ</h1>
+        <h1>APPARENCE PHYSIQUE</h1>
 
-        <h2>Harrold</h2>
-
-        <ul>
-            <li>Profondément bienveillant</li>
-            <li>Empathique</li>
-            <li>Très poli</li>
-            <li>Anxieux</li>
-            <li>Maladroit socialement</li>
-            <li>Perfectionniste</li>
-            <li>Courageux lorsqu'il doit protéger quelqu'un</li>
-        </ul>
-
-        <h2>L'Autre</h2>
-
-        <ul>
-            <li>Manipulateur</li>
-            <li>Sarcastique</li>
-            <li>Cruel</li>
-            <li>Impulsif</li>
-            <li>Juge constamment Harrold</li>
-            <li>Pousse vers des idées sombres</li>
-            <li>Cherche le chaos</li>
-        </ul>
-
-    </div>
-
-    <div class="page right-page">
-
-        <h1>DYNAMIQUE INTERNE</h1>
+        <h2>Description générale</h2>
 
         <p>
-
-        Harrold lutte constamment contre une voix intérieure
-        qu'il désigne sous le nom de « L'Autre ».
-
+            Harrold présente une allure soignée mais fatiguée.
+            Son apparence inspire davantage la sympathie que
+            l'autorité.
         </p>
 
-        <br>
+        <ul>
+            <li>Corpulence moyenne</li>
+            <li>Traits marqués par la fatigue</li>
+            <li>Cernes visibles sous les yeux</li>
+            <li>Regard doux mais constamment inquiet</li>
+            <li>Expression souvent préoccupée</li>
+        </ul>
+
+        <h2>Démarche</h2>
 
         <p>
-
-        Cette présence semble intervenir principalement lors
-        des périodes de stress, de culpabilité ou de doute.
-
+            Le sujet marche généralement avec prudence,
+            les épaules légèrement rentrées.
         </p>
 
-        <br>
+        <p>
+            Plusieurs témoins décrivent une hésitation
+            perceptible dans ses déplacements.
+        </p>
 
         <p>
-
-        Plusieurs témoins rapportent avoir observé le sujet
-        interrompre ses conversations ou parler seul à voix basse.
-
+            Il lui arrive également de sursauter sans
+            raison apparente ou de tourner brièvement
+            la tête comme s'il avait entendu quelqu'un.
         </p>
 
         <div class="note">
 
-        Observation :
+            Observation :
 
-        Le sujet répète régulièrement la phrase suivante :
-
-        <br><br>
-
-        « Tout ça, c'est dans ta tête, Mr. Tweedy... »
+            Le sujet semble rarement totalement détendu,
+            même dans un environnement familier.
 
         </div>
 
+    </div>
+
+    <div class="right-page">
+
+        <h1>TENUE & EFFETS PERSONNELS</h1>
+
+        <h2>Style vestimentaire</h2>
+
+        <ul>
+
+            <li>Costume marron à carreaux</li>
+
+            <li>Influence esthétique des années 80</li>
+
+            <li>Chemise beige ou crème</li>
+
+            <li>Cravate fine souvent mal ajustée</li>
+
+            <li>Chaussures en cuir légèrement usées</li>
+
+        </ul>
+
+        <p>
+            Malgré un désir évident de paraître
+            professionnel, la tenue du sujet donne souvent
+            l'impression d'avoir été ajustée dans la précipitation.
+        </p>
+
+        <h2>Objets observés</h2>
+
+        <p>
+            <strong>Mallette en cuir :</strong>
+            transportée quotidiennement.
+        </p>
+
+        <p>
+            <strong>Stylo plume ancien :</strong>
+            utilisé pour prendre ses notes personnelles.
+        </p>
+
+        <p>
+            <strong>Montre à gousset :</strong>
+            héritée de son père selon ses déclarations.
+        </p>
+
+        <p>
+            Ces objets semblent posséder une forte valeur
+            affective et accompagnent le sujet dans la
+            plupart de ses déplacements.
+        </p>
+
+        <div class="note">
+
+            Les effets personnels du sujet sont entretenus
+            avec un soin remarquable, particulièrement la
+            montre et le stylo plume.
+
+        </div>
+
+    </div>
+
+    <div class="page-number">
+        Page 2 / 8
     </div>
 
 </div>
