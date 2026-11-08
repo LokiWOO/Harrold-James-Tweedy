@@ -1,23 +1,182 @@
-<h1>PROFIL PSYCHOLOGIQUE</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dossier Civil - Page 2</title>
 
-<h2>Harrold</h2>
+<style>
 
-<ul>
-<li>Bienveillant</li>
-<li>Empathique</li>
-<li>Anxieux</li>
-<li>Très poli</li>
-<li>Perfectionniste</li>
-<li>Courageux lorsqu'il faut protéger quelqu'un</li>
-</ul>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<h2>L'Autre</h2>
+body{
+    background:#2c2c2c;
+    font-family:"Courier New", monospace;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-<ul>
-<li>Manipulateur</li>
-<li>Sarcastique</li>
-<li>Cruel</li>
-<li>Impulsif</li>
-<li>Juge constamment Harrold</li>
-<li>Cherche le chaos</li>
-</ul>
+.book{
+    display:flex;
+    gap:15px;
+}
+
+.page{
+    width:500px;
+    height:820px;
+    background:#efe4be;
+    padding:40px;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+    overflow:auto;
+}
+
+.left-page{
+    border-right:4px solid #ccb98d;
+}
+
+.right-page{
+    border-left:4px solid #ccb98d;
+}
+
+h1{
+    border-bottom:2px solid #000;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:25px;
+    line-height:30px;
+}
+
+p{
+    line-height:28px;
+}
+
+.note{
+    margin-top:25px;
+    background:#fff5bf;
+    padding:15px;
+    border-left:5px solid orange;
+}
+
+.arrow{
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    text-decoration:none;
+    color:white;
+    font-size:80px;
+    transition:.2s;
+}
+
+.arrow:hover{
+    transform:translateY(-50%) scale(1.15);
+}
+
+.left{
+    left:30px;
+}
+
+.right{
+    right:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="page1.html" class="arrow left">❮</a>
+
+<div class="book">
+
+    <div class="page left-page">
+
+        <h1>PERSONNALITÉ</h1>
+
+        <h2>Harrold</h2>
+
+        <ul>
+            <li>Profondément bienveillant</li>
+            <li>Empathique</li>
+            <li>Très poli</li>
+            <li>Anxieux</li>
+            <li>Maladroit socialement</li>
+            <li>Perfectionniste</li>
+            <li>Courageux lorsqu'il doit protéger quelqu'un</li>
+        </ul>
+
+        <h2>L'Autre</h2>
+
+        <ul>
+            <li>Manipulateur</li>
+            <li>Sarcastique</li>
+            <li>Cruel</li>
+            <li>Impulsif</li>
+            <li>Juge constamment Harrold</li>
+            <li>Pousse vers des idées sombres</li>
+            <li>Cherche le chaos</li>
+        </ul>
+
+    </div>
+
+    <div class="page right-page">
+
+        <h1>DYNAMIQUE INTERNE</h1>
+
+        <p>
+
+        Harrold lutte constamment contre une voix intérieure
+        qu'il désigne sous le nom de « L'Autre ».
+
+        </p>
+
+        <br>
+
+        <p>
+
+        Cette présence semble intervenir principalement lors
+        des périodes de stress, de culpabilité ou de doute.
+
+        </p>
+
+        <br>
+
+        <p>
+
+        Plusieurs témoins rapportent avoir observé le sujet
+        interrompre ses conversations ou parler seul à voix basse.
+
+        </p>
+
+        <div class="note">
+
+        Observation :
+
+        Le sujet répète régulièrement la phrase suivante :
+
+        <br><br>
+
+        « Tout ça, c'est dans ta tête, Mr. Tweedy... »
+
+        </div>
+
+    </div>
+
+</div>
+
+<a href="page3.html" class="arrow right">❯</a>
+
+</body>
+</html>
