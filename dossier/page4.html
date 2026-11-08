@@ -1,31 +1,259 @@
-<h1>DESCRIPTION PHYSIQUE</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossier Civil - Page 4</title>
 
-<ul>
+<style>
 
-<li>Costume marron à carreaux</li>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<li>Chemise beige ou crème</li>
+body{
+    background:#2c2c2c;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Times New Roman", serif;
+}
 
-<li>Cravate fine souvent mal ajustée</li>
+.book{
+    width:1450px;
+    height:1000px;
+    position:relative;
 
-<li>Chaussures en cuir usées</li>
+    background:url("../images/pages-ouvertes.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
-<li>Cernes marquées</li>
+.left-page{
+    position:absolute;
+    left:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-right:20px;
+}
 
-<li>Expression fatiguée</li>
+.right-page{
+    position:absolute;
+    right:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-left:20px;
+}
 
-<li>Regard inquiet mais bienveillant</li>
+h1{
+    color:#4a3218;
+    border-bottom:2px solid #6f532d;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    font-size:34px;
+}
 
-</ul>
+h2{
+    color:#5d3f1e;
+    margin-top:15px;
+    margin-bottom:8px;
+}
 
-<h2>Accessoires</h2>
+p{
+    color:#2b1f12;
+    line-height:1.7;
+    font-size:20px;
+    margin-bottom:12px;
+}
 
-<ul>
+li{
+    color:#2b1f12;
+    line-height:1.7;
+    margin-left:25px;
+    font-size:20px;
+}
 
-<li>Mallette en cuir</li>
+.arrow{
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+    text-decoration:none;
+    font-size:100px;
+    transition:.2s;
+}
 
-<li>Stylo plume ancien</li>
+.arrow:hover{
+    transform:translateY(-50%) scale(1.1);
+}
 
-<li>Montre à gousset héritée de son père</li>
+.left{
+    left:25px;
+}
 
-</ul>
+.right{
+    right:25px;
+}
+
+.note{
+    margin-top:15px;
+    background:rgba(255,240,180,.35);
+    border-left:4px solid #9b6f1e;
+    padding:15px;
+}
+
+.quote{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:15px;
+    border-left:3px solid #6b4f28;
+    font-style:italic;
+}
+
+.page-number{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#6d5330;
+}
+
+</style>
+</head>
+<body>
+
+<a href="page3.html" class="arrow left">❮</a>
+
+<div class="book">
+
+    <div class="left-page">
+
+        <h1>L'AUTRE</h1>
+
+        <p>
+            Le sujet désigne régulièrement une présence mentale
+            qu'il nomme simplement <strong>« L'Autre »</strong>.
+        </p>
+
+        <p>
+            Selon les déclarations de Harrold Tweedy,
+            cette voix est présente depuis l'enfance et
+            n'a jamais totalement disparu.
+        </p>
+
+        <h2>Traits décrits</h2>
+
+        <ul>
+            <li>Manipulateur</li>
+            <li>Sarcastique</li>
+            <li>Cruel</li>
+            <li>Impulsif</li>
+            <li>Provocateur</li>
+            <li>Hostile envers le sujet</li>
+        </ul>
+
+        <h2>Influence observée</h2>
+
+        <p>
+            La voix semble exploiter les peurs,
+            les doutes et le sentiment de culpabilité
+            du sujet.
+        </p>
+
+        <p>
+            Elle apparaît particulièrement active
+            lors des périodes de fatigue ou de forte
+            pression psychologique.
+        </p>
+
+        <div class="note">
+
+            Observation :
+
+            L'Autre ne s'adresse jamais directement
+            à d'autres personnes.
+            Toutes les interactions semblent limitées
+            à Harrold Tweedy.
+
+        </div>
+
+    </div>
+
+    <div class="right-page">
+
+        <h1>DYNAMIQUE INTERNE</h1>
+
+        <p>
+            Harrold affirme devoir lutter quotidiennement
+            pour conserver le contrôle de ses décisions.
+        </p>
+
+        <p>
+            Les conversations entre le sujet et cette voix
+            prennent souvent la forme de désaccords
+            ou de confrontations internes.
+        </p>
+
+        <h2>Manifestations observées</h2>
+
+        <ul>
+
+            <li>Interruptions soudaines de conversation</li>
+
+            <li>Réponses à voix basse</li>
+
+            <li>Regard perdu pendant plusieurs secondes</li>
+
+            <li>Murmures incompréhensibles</li>
+
+            <li>Changements brusques d'expression</li>
+
+        </ul>
+
+        <h2>Mantra de contrôle</h2>
+
+        <p>
+            Afin de reprendre ses esprits lors des épisodes
+            les plus difficiles, le sujet répète régulièrement
+            une phrase devenue caractéristique.
+        </p>
+
+        <div class="quote">
+
+            « Tout ça, c'est dans ta tête,
+            Mr. Tweedy... »
+
+        </div>
+
+        <p>
+            Ce mantra semble constituer un mécanisme de
+            défense psychologique permettant au sujet de
+            conserver un certain niveau de stabilité.
+        </p>
+
+        <div class="note">
+
+            Malgré la présence constante de L'Autre,
+            aucune manifestation de violence directe
+            attribuée au sujet n'a été observée.
+
+        </div>
+
+    </div>
+
+    <div class="page-number">
+        Page 4 / 8
+    </div>
+
+</div>
+
+<a href="page5.html" class="arrow right">❯</a>
+
+</body>
+</html>
