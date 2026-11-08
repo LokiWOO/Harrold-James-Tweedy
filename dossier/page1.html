@@ -2,38 +2,165 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Page 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harrold James Tweedy - Dossier Civil</title>
 
 <style>
 
-body{
-background:#2f2f2f;
-font-family:"Courier New", monospace;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.page{
-width:1000px;
-margin:30px auto;
-background:#efe4be;
-padding:50px;
-min-height:800px;
+body{
+    background:#2c2c2c;
+    font-family:"Times New Roman", serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.book{
+
+    width:1450px;
+    height:1000px;
+
+    position:relative;
+
+    background:url("../images/pages-ouvertes.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+
+}
+
+.left-page{
+
+    position:absolute;
+
+    left:75px;
+    top:95px;
+
+    width:560px;
+    height:820px;
+
+}
+
+.right-page{
+
+    position:absolute;
+
+    right:75px;
+    top:95px;
+
+    width:560px;
+    height:820px;
+
+}
+
+h1{
+
+    color:#4a3218;
+
+    border-bottom:2px solid #6f532d;
+
+    padding-bottom:10px;
+
+    margin-bottom:20px;
+
+    font-size:36px;
+
+}
+
+h2{
+
+    color:#573b1d;
+
+    margin-top:20px;
+    margin-bottom:10px;
+
+}
+
+p{
+
+    color:#2b1f12;
+
+    font-size:21px;
+
+    line-height:1.7;
+
+    margin-bottom:12px;
+
+}
+
+.info{
+
+    margin-bottom:15px;
+
 }
 
 .arrow{
-position:fixed;
-top:50%;
-font-size:80px;
-color:white;
-text-decoration:none;
-transform:translateY(-50%);
+
+    position:fixed;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:100px;
+
+    transition:.2s;
+
+}
+
+.arrow:hover{
+
+    transform:translateY(-50%) scale(1.1);
+
 }
 
 .left{
-left:30px;
+
+    left:25px;
+
 }
 
 .right{
-right:30px;
+
+    right:25px;
+
+}
+
+.note{
+
+    margin-top:20px;
+
+    background:rgba(255,240,180,.35);
+
+    border-left:4px solid #9b6f1e;
+
+    padding:15px;
+
+}
+
+.page-number{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#725736;
+
 }
 
 </style>
@@ -41,33 +168,99 @@ right:30px;
 <body>
 
 <a href="../index.html" class="arrow left">❮</a>
-<a href="page2.html" class="arrow right">❯</a>
 
-<div class="page">
+<div class="book">
 
-<h1>IDENTITÉ CIVILE</h1>
+    <div class="left-page">
 
-<hr>
+        <h1>IDENTITÉ CIVILE</h1>
 
-<p><b>Nom complet :</b> Harrold James Tweedy</p>
+        <p class="info"><strong>Nom complet :</strong> Harrold James Tweedy</p>
 
-<p><b>Âge :</b> 35 ans</p>
+        <p class="info"><strong>Âge :</strong> 35 ans</p>
 
-<p><b>Sexe :</b> Masculin</p>
+        <p class="info"><strong>Sexe :</strong> Masculin</p>
 
-<p><b>Origine :</b> Londres</p>
+        <p class="info"><strong>Origine :</strong> Londres, Royaume‑Uni</p>
 
-<p><b>Nationalité :</b> Britannique</p>
+        <p class="info"><strong>Nationalité :</strong> Anglaise</p>
 
-<p><b>Statut civil :</b> Célibataire</p>
+        <p class="info"><strong>Statut civil :</strong> Célibataire</p>
 
-<p><b>Profession :</b> Comptable indépendant</p>
+        <p class="info"><strong>Profession :</strong> Comptable indépendant</p>
 
-<p><b>Spécialisation :</b> Audits à risques</p>
+        <p class="info"><strong>Spécialité :</strong> Audits financiers à risques</p>
 
-<p><b>Phrase récurrente :</b> « Tout ça, c'est dans ta tête, Mr. Tweedy... »</p>
+        <p class="info"><strong>Dossier :</strong> LS‑HT‑3584</p>
+
+        <p class="info"><strong>Particularité :</strong> Présence déclarée d'une voix intérieure nommée « L'Autre »</p>
+
+        <div class="note">
+
+            Citation récurrente du sujet :
+
+            <br><br>
+
+            « Tout ça, c'est dans ta tête,
+            Mr. Tweedy... »
+
+        </div>
+
+    </div>
+
+    <div class="right-page">
+
+        <h1>RÉSUMÉ ADMINISTRATIF</h1>
+
+        <p>
+
+            Harrold James Tweedy est un ressortissant britannique
+            actuellement installé à Los Santos où il exerce la profession
+            de comptable indépendant.
+
+        </p>
+
+        <p>
+
+            Réputé pour sa rigueur et ses compétences dans l'analyse
+            financière, il intervient principalement dans la réalisation
+            d'audits complexes et de contrôles comptables sensibles.
+
+        </p>
+
+        <p>
+
+            Les différentes observations recueillies décrivent un individu
+            calme, poli et extrêmement respectueux de ses interlocuteurs.
+
+        </p>
+
+        <p>
+
+            Malgré cette apparence sans histoire, plusieurs comportements
+            inhabituels ont été relevés au fil des années. Le sujet semble
+            régulièrement engagé dans des conversations avec une présence
+            qu'il est seul à percevoir.
+
+        </p>
+
+        <p>
+
+            Aucune activité criminelle n'est actuellement associée au sujet.
+            Les anomalies observées paraissent principalement liées à son
+            état psychologique particulier.
+
+        </p>
+
+    </div>
+
+    <div class="page-number">
+        Page 1 / 8
+    </div>
 
 </div>
+
+<a href="page2.html" class="arrow right">❯</a>
 
 </body>
 </html>
