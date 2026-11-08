@@ -1,28 +1,259 @@
-<h1>DYNAMIQUE INTERNE</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossier Civil - Page 3</title>
 
-<p>
+<style>
 
-Le sujet affirme cohabiter avec une voix intérieure
-qu'il appelle "L'Autre".
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-Cette présence semble apparaître dans les moments
-de stress et de culpabilité.
+body{
+    background:#2c2c2c;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Times New Roman", serif;
+}
 
-</p>
+.book{
+    width:1450px;
+    height:1000px;
+    position:relative;
 
-<p>
+    background:url("../images/pages-ouvertes.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
-Des témoins rapportent avoir observé le sujet
-parler seul dans certains lieux publics.
+.left-page{
+    position:absolute;
+    left:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-right:20px;
+}
 
-</p>
+.right-page{
+    position:absolute;
+    right:75px;
+    top:95px;
+    width:560px;
+    height:820px;
+    padding-left:20px;
+}
 
-<div style="background:#fff4a3;padding:20px;">
+h1{
+    color:#4a3218;
+    border-bottom:2px solid #6f532d;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    font-size:34px;
+}
 
-NOTE :
+h2{
+    color:#5d3f1e;
+    margin-top:20px;
+    margin-bottom:10px;
+}
 
-Le sujet murmure régulièrement :
+p{
+    color:#2b1f12;
+    line-height:1.7;
+    font-size:20px;
+    margin-bottom:10px;
+}
 
-« Tout ça, c'est dans ta tête, Mr. Tweedy... »
+li{
+    color:#2b1f12;
+    line-height:1.7;
+    margin-left:25px;
+    font-size:20px;
+}
+
+.arrow{
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+    text-decoration:none;
+    font-size:100px;
+    transition:.2s;
+}
+
+.arrow:hover{
+    transform:translateY(-50%) scale(1.1);
+}
+
+.left{
+    left:25px;
+}
+
+.right{
+    right:25px;
+}
+
+.note{
+    margin-top:20px;
+    background:rgba(255,240,180,.35);
+    border-left:4px solid #9b6f1e;
+    padding:15px;
+}
+
+.skill{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px dotted #7a6038;
+    margin-bottom:12px;
+    padding-bottom:4px;
+    font-size:20px;
+    color:#2b1f12;
+}
+
+.page-number{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#6d5330;
+}
+
+</style>
+</head>
+<body>
+
+<a href="page2.html" class="arrow left">❮</a>
+
+<div class="book">
+
+    <div class="left-page">
+
+        <h1>PROFIL PSYCHOLOGIQUE</h1>
+
+        <p>
+            Harrold Tweedy présente le profil d'un individu
+            profondément bienveillant malgré un état de stress
+            quasi permanent.
+        </p>
+
+        <p>
+            Les observations recueillies démontrent un fort sens
+            moral, une volonté constante d'aider les autres ainsi
+            qu'une difficulté marquée à supporter l'échec ou le
+            conflit.
+        </p>
+
+        <h2>Traits dominants</h2>
+
+        <ul>
+            <li>Gentil et attentionné</li>
+            <li>Profondément empathique</li>
+            <li>Très poli, parfois excessivement</li>
+            <li>Souvent anxieux</li>
+            <li>Maladroit dans les interactions sociales</li>
+            <li>Perfectionniste</li>
+            <li>Obsessif lorsqu'il cherche à bien faire</li>
+            <li>Courageux lorsqu'une autre personne est en danger</li>
+        </ul>
+
+        <div class="note">
+
+            Malgré ses nombreuses craintes, le sujet continue
+            généralement d'agir lorsqu'il estime qu'une personne
+            a besoin d'aide.
+
+        </div>
+
+    </div>
+
+    <div class="right-page">
+
+        <h1>COMPÉTENCES & ÉVALUATION</h1>
+
+        <div class="skill">
+            <span>Comptabilité</span>
+            <span>10 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Observation</span>
+            <span>8 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Fuite</span>
+            <span>7 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Persuasion</span>
+            <span>6 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Résistance mentale</span>
+            <span>5 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Self-Control</span>
+            <span>4 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Combat</span>
+            <span>2 / 10</span>
+        </div>
+
+        <div class="skill">
+            <span>Intimidation</span>
+            <span>1 / 10</span>
+        </div>
+
+        <h2>Évaluation générale</h2>
+
+        <p>
+            Le sujet possède une mémoire remarquable et une
+            aptitude exceptionnelle à repérer les incohérences
+            dans des documents financiers.
+        </p>
+
+        <p>
+            Sa capacité d'analyse dépasse largement la moyenne
+            observée chez les individus exerçant dans le même
+            domaine professionnel.
+        </p>
+
+        <p>
+            Ses principales faiblesses restent la gestion du
+            stress, la pression sociale et les effets liés à
+            sa situation psychologique particulière.
+        </p>
+
+        <div class="note">
+
+            Capable de repérer des détails ignorés par la plupart
+            des individus lors d'une enquête ou d'un audit.
+
+        </div>
+
+    </div>
+
+    <div class="page-number">
+        Page 3 / 8
+    </div>
 
 </div>
+
+<a href="page4.html" class="arrow right">❯</a>
+
+</body>
+</html>
